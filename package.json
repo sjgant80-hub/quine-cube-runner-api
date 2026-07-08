@@ -1,0 +1,40 @@
+{
+  "name": "@ai-native-solutions/quine-cube-runner-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "HTTP REST proxy for @ai-native-solutions/quine-cube-runner-sdk - templates, sandboxed run, byte-diff verify, mutation testing.",
+  "main": "./server.mjs",
+  "bin": {
+    "quine-cube-runner-api": "./server.mjs"
+  },
+  "files": ["server.mjs", "Dockerfile", "docker-compose.yml", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@ai-native-solutions/quine-cube-runner-sdk": "^1.0.0"
+  },
+  "keywords": [
+    "quine",
+    "http",
+    "rest",
+    "api",
+    "sandbox",
+    "mutation-testing",
+    "sovereign",
+    "ai-native-solutions"
+  ],
+  "author": "AI-Native Solutions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjgant80-hub/quine-cube-runner-api.git"
+  },
+  "homepage": "https://github.com/sjgant80-hub/quine-cube-runner-api",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

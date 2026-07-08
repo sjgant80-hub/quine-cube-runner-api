@@ -1,0 +1,13 @@
+services:
+  quine-cube-runner-api:
+    build: .
+    image: ai-native-solutions/quine-cube-runner-api:1.0.0
+    container_name: quine-cube-runner-api
+    restart: unless-stopped
+    ports:
+      - "4300:4300"
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 4300
+      RUN_TIMEOUT_MS: 2000
